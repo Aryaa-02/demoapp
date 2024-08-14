@@ -23,6 +23,7 @@ public class Customer_Creation {
                 driver.manage().window().maximize();
                 // this link has been updated due to marge
                 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+                // this link has been updated due to marge
                 driver.findElement(By.xpath("//a[@class='whitespace-nowrap hover:underline text-white']")).click();
                 driver.findElement(By.id("account_email")).sendKeys("Enter your Email");
                 WebElement emailbutton = wait
@@ -36,7 +37,7 @@ public class Customer_Creation {
                                 .until(ExpectedConditions
                                                 .elementToBeClickable(By.xpath("//span[@class='ui-button__text']")));
                 login.submit();
-
+                // this link has been updated due to marge
                 // Using faker to give fake information
                 Faker faker = new Faker();
 
