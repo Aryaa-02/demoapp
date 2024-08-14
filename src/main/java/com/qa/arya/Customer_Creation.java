@@ -18,7 +18,8 @@ public class Customer_Creation {
         public static void main(String[] args) throws InterruptedException {
                 // Login in your Shopify Store
                 WebDriver driver = new ChromeDriver();
-                driver.get("https://www.shopify.com/in");
+                driver.get("https://www.shopify.com");
+                // this link has been updated
                 driver.manage().window().maximize();
                 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
                 driver.findElement(By.xpath("//a[@class='whitespace-nowrap hover:underline text-white']")).click();
